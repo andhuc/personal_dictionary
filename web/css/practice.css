@@ -1,0 +1,49 @@
+.container {
+  width: 120vmin;
+  position: relative;
+}
+
+.answer,.question {
+
+  width: 100%;
+  text-align: center;
+  margin: 5vh 0;
+}
+
+.answer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  width: 20%;
+  aspect-ratio: 2;
+  background-color: #ae9cff;
+  color: black;
+  border-radius: 10px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #776baf;
+  cursor: pointer;
+}
+
+.record {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 20px;
+
+}
+
+.option{
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

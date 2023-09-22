@@ -1,0 +1,44 @@
+.inputText {
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #ae9cff;
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+.button {
+    padding: 15px 0;
+    width: 20%;
+    background-color: #ae9cff;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 80vmin;
+    position: relative;
+}
+
+.info{
+    margin-top: 4%;
+    font-size: 16px;
+}
+
+.boldText{
+    font-weight: bold;
+}
