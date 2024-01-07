@@ -35,19 +35,14 @@ public class AccountDAO {
         return null;
     }
     
-    public String registerAccount(String user, String pass, String name, String email, String address, String phone, String dob) {
+    public String registerAccount(String user, String pass) {
         
         try {
-            String query = "insert into account(account_name, account_username, account_password, account_email, account_address, account_phone, account_dob) values(?,?,?,?,?,?,?)";
+            String query = "insert into account values(?,?,NULL)";
             connection = new DBContext().getConnection();
             preparedStatement = connection.prepareStatement(query);
-            preparedStatement.setString(1, name);
-            preparedStatement.setString(2, user);
-            preparedStatement.setString(3, pass);
-            preparedStatement.setString(4, email);
-            preparedStatement.setString(5, address);
-            preparedStatement.setString(6, phone);
-            preparedStatement.setString(7, dob);
+            preparedStatement.setString(1, user);
+            preparedStatement.setString(2, pass);
             preparedStatement.executeUpdate();
             return "Register successfully!";
             
